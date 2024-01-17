@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KaTeX Example</title>
+  <!-- KaTeXのスタイルシートとスクリプトを読み込む -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+        integrity="sha384-rJSFJLeq83l7tX5t9xsfw15fDBAA8pwQjQMbTcMLC3Dhqde7jHpw5UqYjTh/REHR" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+          integrity="sha384-oxqVuOzN+Dw5cYBXqIN3F7LQo3GbV63yYF1S7z7OgiAgF6yZJtdVSzF2Mj5igw1z" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- LaTeX形式で数式を記述 -->
+  <p>Quadratic equation: \(x^2 + 5\)</p>
+
+  <script>
+    // KaTeXを使用して数式を描画
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body);
+    });
+  </script>
+
+</body>
+</html>
